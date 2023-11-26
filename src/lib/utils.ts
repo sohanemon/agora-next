@@ -1,5 +1,3 @@
-import { NextRequest } from 'next/server';
-
 export const svgToBase64 = (str: string) =>
   typeof window === 'undefined'
     ? Buffer.from(str).toString('base64')

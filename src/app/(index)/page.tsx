@@ -8,13 +8,17 @@ export default async function IndexPage() {
   return (
     <section>
       <P center className="mt-20 text-7xl text-primary/80">
-        Update Readme, Site.ts and package.json
+        Start by editing src/app/(index)/page.tsx
       </P>
+      <br />
+      <P center></P>
+      <br />
       <Img
-        className="rounded-md center-x"
+        className="h-[500px] rounded-md object-cover center-x"
+        objectFit="cover"
         placeholder="shimmer"
         src={'https://images.unsplash.com/photo-1695653420624-4a23b2ffc77c'}
-        width={700}
+        width={500}
       />
     </section>
   );

@@ -1,6 +1,9 @@
-import { stackMiddlewares } from './middlewares';
-import { withHomeRedirect } from './middlewares/with-home-redirect';
+import { NextResponse, type NextRequest } from 'next/server';
 
-const middlewares = [withHomeRedirect];
+export function middleware(request: NextRequest) {
+  return NextResponse.redirect(new URL('/', request.url));
+}
 
-export default stackMiddlewares(middlewares);
+export const config = {
+  matcher: '/((?!api|_next/static|_next/image|favicon.ico).+)',
+};

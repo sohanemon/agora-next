@@ -1,24 +1,20 @@
 import { Metadata, Viewport } from 'next';
 
-import { NavType } from '@/types/index.types';
-
 export type SiteConfig = typeof siteConfig;
 
-const favicon = '/favicon.ico';
+const favicon = 'logo.png';
 
 export const siteConfig: {
   metadata: Metadata;
   viewport: Viewport;
-  nav: NavType[];
-  underConstruction: NavType[];
 } = {
   metadata: {
     title: {
-      default: 'Next.JS',
-      template: `%s - Next`,
+      default: 'Agora',
+      template: `%s - Agora`,
     },
 
-    description: 'Minimal Next.js Template',
+    description: 'Agora Landing Page',
     icons: {
       icon: favicon,
       shortcut: favicon,
@@ -31,9 +27,4 @@ export const siteConfig: {
       { media: '(prefers-color-scheme: dark)', color: 'black' },
     ],
   },
-  nav: [
-    { title: 'home', href: '/home' },
-    { title: 'images', href: '/images' },
-  ],
-  underConstruction: [{ title: 'about', href: '/about' }],
 };

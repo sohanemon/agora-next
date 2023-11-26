@@ -11,7 +11,9 @@ export default async function IndexPage() {
         Start by editing src/app/(index)/page.tsx
       </P>
       <br />
-      <P center></P>
+      <P center>
+        try to use shimmer for placeholder of image like the image below
+      </P>
       <br />
       <Img
         className="h-[500px] rounded-md object-cover center-x"

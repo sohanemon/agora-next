@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin';
 
-export const base = plugin(function ({ addBase, addVariant, matchVariant }) {
+export const base = plugin(function ({ addBase }) {
   const states = { selected: true, state: 'open' };
   addBase({
     '::-webkit-scrollbar': { width: '8px', height: '8px' },
@@ -30,14 +30,5 @@ export const base = plugin(function ({ addBase, addVariant, matchVariant }) {
     'input,textarea': {
       '@apply bg-transparent outline-none': {},
     },
-  });
-  Object.keys(states).forEach((state) =>
-    addVariant(
-      state,
-      `&[data-${state}="${states[state as keyof typeof states]}"]`
-    )
-  );
-  matchVariant('nth', (value) => {
-    return `&:nth-child(${value})`;
   });
 });

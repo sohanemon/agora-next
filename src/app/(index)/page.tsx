@@ -4,6 +4,7 @@ import TopHero from './_components/TopHero';
 import BottomHero from './_components/BottomHero';
 import ProfitOverview from './_components/ProfitOverview';
 import ScreenshotView from './_components/ScreenshotView';
+import LiveDream from './_components/LiveDream';
 
 export const metadata = {
   title: 'Home',
@@ -14,6 +15,7 @@ export default async function IndexPage() {
       <TopHero />
       <QAndA />
       <ProfitOverview />
+      <LiveDream/>
       <ScreenshotView />
       <BottomHero />
     </section>

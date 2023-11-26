@@ -11,13 +11,13 @@ export const metadata = {
 };
 export default async function IndexPage() {
   return (
-    <section className=''>
+    <>
       <TopHero />
       <QAndA />
       <ProfitOverview />
       <LiveDream/>
       <ScreenshotView />
       <BottomHero />
-    </section>
+    </>
   );
 }

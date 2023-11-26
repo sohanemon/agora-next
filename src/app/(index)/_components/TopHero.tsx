@@ -3,7 +3,7 @@ import { Text as P } from '@/components/ui/text';
 import { Img } from '@/components/image';
 import Button from '@/components/ui/Button';
 
-const Hero = () => {
+const TopHero = () => {
     return (
         <section className="flex flex-col gap-10 p-4 xl:flex-row xl:gap-40">
             <div className="mt-10 flex flex-col items-center  xl:ml-20 xl:w-[450px] xl:items-start">
@@ -21,7 +21,8 @@ const Hero = () => {
                     make <span className="text-primary">money</span> <br />
                 </P>
                 <p className='text-center xl:text-start'>Turn your passion into your livelihood, and pioneer the future of art and music monetization.</p>
-                <Button />
+                <button className='mt-4 text-primary bg-secondary border border-primary px-6 py-4 uppercase'>JOIN WAITLIST for exclusive early access</button>
+
             </div>
             <div className='flex flex-col items-center'>
                 <Img
@@ -35,4 +36,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default TopHero;

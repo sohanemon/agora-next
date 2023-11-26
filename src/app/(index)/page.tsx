@@ -1,5 +1,7 @@
-import Hero from './_components/Hero';
+import Hero from './_components/TopHero';
 import QAndA from './_components/QAndA';
+import TopHero from './_components/TopHero';
+import BottomHero from './_components/BottomHero';
 
 export const metadata = {
   title: 'Home',
@@ -7,8 +9,9 @@ export const metadata = {
 export default async function IndexPage() {
   return (
     <section className=''>
-      <Hero />
-      <QAndA/>
+      <TopHero />
+      <QAndA />
+      <BottomHero />
     </section>
   );
 }

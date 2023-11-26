@@ -1,0 +1,23 @@
+export const colors = {
+  default: {
+    background: '#ffffff',
+    foreground: '#000000',
+    card: '#ffffff',
+    'card-foreground': '#000000',
+    popover: '#ffffff',
+    'popover-foreground': '#000000',
+    primary: '#ff6767',
+    'primary-foreground': '#f7f9fc',
+    secondary: '#f7f7f7',
+    'secondary-foreground': '#0e0e0e',
+    muted: '#f7f7f7',
+    'muted-foreground': '#b6b6b6',
+    accent: '#f7f7f7',
+    'accent-foreground': '#0e0e0e',
+    destructive: '#f95757',
+    'destructive-foreground': '#fafafa',
+    border: '#e4e4e4',
+    input: '#e4e4e4',
+    ring: '#ff6767',
+  },
+};

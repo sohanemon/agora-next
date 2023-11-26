@@ -1,11 +1,12 @@
-import { Text as P } from '@/components/ui/text'; 
+import { Img } from '@/components/image';
+import { Text as P } from '@/components/ui/text';
 import React from 'react';
 
 const QAndA = () => {
-    const QandAData=[
+    const QandAData = [
         {
-            que:"So what do you do on Agora?",
-            ans:"You create polls around your art and music, and get feedback from your friends and fans."
+            que: "So what do you do on Agora?",
+            ans: "You create polls around your art and music, and get feedback from your friends and fans."
         },
         {
             que: "How do these polls work?",
@@ -21,10 +22,37 @@ const QAndA = () => {
         },
     ]
     return (
-        <section className='container mt-16'>
-            <P center className='text-clamp'>Q&A</P>
+        <section className='container my-16'>
+            <P center className='text-clamp mb-16'>Q&A</P>
+            <div className='grid grid-cols-1 gap-8 sm:grid-cols-2'>
+                {
+                    QandAData.map(({ que, ans }, i) => <div key={i} className='border p-6'>
+                        <P className='text-2xl font-medium'>{que}</P>
+                        <p className='opacity-70'>{ans}</p>
+                    </div>)
+                }
+            </div>
             <div>
-
+                <div className='text-center'>
+                    <P className='mt-14 text-xl font-medium'>Here’s what Agora will look like</P>
+                    <p className='opacity-70'>Below are some screenshots of our closed launch. </p>
+                </div>
+                <div className='mt-10 flex flex-col justify-center gap-10 sm:flex-row md:gap-20'>
+                    <div className='flex flex-col items-center'>
+                        <P className='mb-3 text-center text-xl font-medium'>Vote Page</P>
+                        <Img
+                            placeholder='shimmer'
+                            src={'/public/images/vote.png'}
+                        />
+                    </div>
+                    <div className='flex flex-col items-center'>
+                        <P className='mb-3 text-center text-xl font-medium'>Poll Results Page</P>
+                        <Img
+                            placeholder='shimmer'
+                            src={'/public/images/result.png'}
+                        />
+                    </div>
+                </div>
             </div>
         </section>
     );

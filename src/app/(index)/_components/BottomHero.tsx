@@ -1,14 +1,13 @@
 import React from 'react';
 import { Text as P } from '@/components/ui/text';
 import { Img } from '@/components/image';
-import Button from '@/components/ui/Button';
 
 const BottomHero = () => {
     return (
-        <section className="my-20 flex flex-col gap-10 p-4 xl:flex-row xl:gap-40">
-            <div className="mt-10 flex flex-col sm:ml-16 xl:ml-20 xl:w-[580px] xl:items-start">
-                <div className='flex flex-col md:justify-between md:items-center md:flex-row xl:flex-col'>
-                    <P className="text-clamp mt-20 font-bold uppercase">
+        <section className="container mt-20 flex flex-col gap-14 p-4 xl:flex-row xl:gap-11">
+            <div className="mt-10 flex flex-col xl:w-[580px]">
+                <div className='flex flex-col md:justify-between xl:justify-normal md:items-center xl:items-start md:flex-row xl:flex-col'>
+                    <P className="mt-20 text-clamp font-bold uppercase">
                         FIND NEw <span className="text-primary">art</span> <br />
                         FIND NEw <span className="text-primary">music</span> <br />
                         FIND NEw <span className="text-primary">fans</span> <br />

@@ -22,19 +22,20 @@ const LiveDream = () => {
                 </P>
             </div>
             <div className='mt-20 flex flex-col items-center justify-center'>
-                <div className='flex gap-28'>
+                <div className='flex gap-14 sm:gap-28'>
                     <Img
+                    className=''
                         placeholder='shimmer'
                         src={'/public/images/music2.png'}
                         width={332}
                     />
-                    <P className="mt-20 mb-4 text-center text-clamp font-bold uppercase">
+                    <P className="mb-4 mt-20 text-center text-clamp font-bold uppercase">
                         I Make <br />
                         <span className="text-primary">Music</span>
                     </P>
                 </div>
-                <div className='-ml-4 sm:ml-4 flex gap-28'>
-                    <P className="mt-20 mb-4 text-center text-clamp font-bold uppercase">
+                <div className='-ml-4 flex gap-12  sm:ml-4 sm:gap-28'>
+                    <P className="mb-4 mt-20 text-center text-clamp font-bold uppercase">
                         I Make <br />
                         <span className="text-primary">Music</span>
                     </P>

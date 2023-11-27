@@ -23,18 +23,18 @@ const QAndA = () => {
     ]
     return (
         <section className='container my-16'>
-            <P center className='text-clamp mb-16'>Q&A</P>
+            <P center className='mb-16 text-clamp font-bold'>Q&A</P>
             <div className='grid grid-cols-1 gap-8 sm:grid-cols-2'>
                 {
                     QandAData.map(({ que, ans }, i) => <div key={i} className='border p-6'>
-                        <P className='text-2xl font-medium'>{que}</P>
+                        <P className='mb-1 text-2xl font-medium'>{que}</P>
                         <p className='opacity-70'>{ans}</p>
                     </div>)
                 }
             </div>
             <div>
                 <div className='text-center'>
-                    <P className='mt-14 text-xl font-medium'>Here’s what Agora will look like</P>
+                    <P className='mb-1 mt-14 text-xl font-medium'>Here’s what Agora will look like</P>
                     <p className='opacity-70'>Below are some screenshots of our closed launch. </p>
                 </div>
                 <div className='mt-10 flex flex-col justify-center gap-10 sm:flex-row md:gap-20'>

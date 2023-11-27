@@ -1,10 +1,10 @@
-import Hero from './_components/TopHero';
-import QAndA from './_components/QAndA';
-import TopHero from './_components/TopHero';
 import BottomHero from './_components/BottomHero';
-import ProfitOverview from './_components/ProfitOverview';
-import ScreenshotView from './_components/ScreenshotView';
 import LiveDream from './_components/LiveDream';
+import ProfitOverview from './_components/ProfitOverview';
+import QAndA from './_components/QAndA';
+import ScreenshotView from './_components/ScreenshotView';
+import Hero from './_components/TopHero';
+import TopHero from './_components/TopHero';
 
 export const metadata = {
   title: 'Home',
@@ -15,7 +15,7 @@ export default async function IndexPage() {
       <TopHero />
       <QAndA />
       <ProfitOverview />
-      <LiveDream/>
+      <LiveDream />
       <ScreenshotView />
       <BottomHero />
     </>

@@ -15,8 +15,8 @@ export const theme = plugin(() => {}, {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
       },
-      fontSize:{
-        clamp: "clamp(32px, 4vw, 56px)",
+      fontSize: {
+        clamp: 'clamp(32px, 4vw, 56px)',
       },
       borderRadius: {
         lg: 'var(--radius)',

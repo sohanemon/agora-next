@@ -10,11 +10,11 @@ const TopHero = () => {
         <div className="mt-10 flex max-w-[450px] flex-col items-center xl:items-start">
           <Link className="flex gap-2 uppercase" href={'/'}>
             <Img
-              className="w-7"
+              height={58}
               placeholder="shimmer"
               src={'/public/images/agora.png'}
+              width={172}
             />
-            Agora
           </Link>
           <P className="text-clamp mb-4 mt-5 font-bold uppercase md:mt-10 xl:mt-20">
             Make <span className="text-primary">art</span> <br />
@@ -25,7 +25,7 @@ const TopHero = () => {
             Turn your passion into your livelihood, and pioneer the future of
             art and music monetization.
           </p>
-          <button className="bg-secondary mt-8 border border-primary px-6 py-4 text-sm uppercase text-primary sm:mt-11 sm:text-base xl:mt-4">
+          <button className="bg-secondary mt-8 border border-primary px-6 py-4 text-sm font-semibold uppercase text-primary sm:mt-11 sm:text-base xl:mt-4">
             JOIN WAITLIST for exclusive early access
           </button>
         </div>

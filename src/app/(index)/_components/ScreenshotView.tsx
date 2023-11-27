@@ -1,12 +1,10 @@
-import React from 'react';
-
 import { Text as P } from '@/components/ui/text';
 import { Img } from '@/components/image';
 
 const ScreenshotView = () => {
   return (
     <section className="container">
-      <P className="mb-4 mt-20 text-center text-clamp font-bold uppercase">
+      <P className="text-clamp mb-4 mt-20 text-center font-bold uppercase">
         MORE SCREENSHOTS <br />
         FOR YOUR VIEWING PLEASURE
       </P>
@@ -36,10 +34,12 @@ const ScreenshotView = () => {
           <Img placeholder="shimmer" src={'/public/images/profile.png'} />
         </div>
       </div>
-      <p className="mx-auto mt-8 max-w-[900px] text-center font-semibold">
+      <p className="mx-auto mt-8 max-w-[900px] text-center">
         <>
-          <span className="opacity-70">On Agora </span>all social actions are
-          also monetary actions.
+          <span className="opacity-70">On Agora </span>
+          <span className="font-semibold">
+            all social actions are also monetary actions.
+          </span>
           <span className="opacity-70">
             {' '}
             People pay to participate (even if it’s just a tiny micropayment).
@@ -47,7 +47,7 @@ const ScreenshotView = () => {
           </span>
         </>{' '}
         <br /> <br />
-        <span className="text-primary">
+        <span className="font-bold text-primary">
           That means every time you get a notification, you get new money in
           your wallet.
         </span>

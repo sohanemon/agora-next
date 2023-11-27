@@ -7,7 +7,7 @@ const LiveDream = () => {
         <section className='container'>
             <P className="mb-4 mt-20 text-center text-clamp font-bold uppercase">LIVE YOUR DREAM</P>
             <div className='mt-32 flex flex-col sm:items-center'>
-                <P className='mb-5 text-xl font-bold sm:-ml-80 sm:text-3xl md:-ml-96'>
+                <P className='mb-5 text-lg font-bold sm:-ml-80 sm:text-2xl md:text-3xl md:-ml-96'>
                     I DO WHAT I LOVE <br />
                     I LOVE WHAT I DO
                 </P>
@@ -16,7 +16,7 @@ const LiveDream = () => {
                     src={'/public/images/dream.png'}
                     width={515}
                 />
-                <P className='ml-28 mt-5 text-xl font-bold sm:ml-32 sm:text-3xl md:ml-48'>
+                <P className='ml-12 mt-5 text-lg font-bold sm:ml-32 sm:text-3xl md:ml-48'>
                     MY PASSION IS MY LIVELIHOOD <br />
                     MY LIVELIHOOD IS MY PASSION
                 </P>
